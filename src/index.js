@@ -18,7 +18,7 @@ const gameRules = (game) => {
          console.log('Correct!');
          i += 1;
       } else {
-         console.log(`'${userAnswer}' is wrong answer;(. Correct answer was ${correctAnswer})`);
+         console.log(`Your answer: '${userAnswer}' is wrong answer;(. Correct answer was ${correctAnswer})`);
          return `Let's try again, ${userName}`;
       }
    }
