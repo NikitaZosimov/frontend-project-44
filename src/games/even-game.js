@@ -1,7 +1,6 @@
 import gameRules from "../index.js";
 import getRandomNumbers from "../getRandomNumbers.js";
 
-
 const brainEvenCheckAndStart = () => {
    const countRounds = [];
    while (countRounds.length < 3) {
@@ -13,13 +12,11 @@ const brainEvenCheckAndStart = () => {
       };
       if (getsNumber % 2 !== 0) {
          correctAnswer = 'no';
-      }
+      };
       countRounds.push([question, correctAnswer]);
-   }
+   };
    const task = 'Answer "yes" if the number is even, otherwise answer "no".';
    const game = [countRounds, task].flat();
    return gameRules(game);
-
 };
 export default brainEvenCheckAndStart;
-

@@ -7,7 +7,6 @@ const gameRules = (game) => {
    const task = game[3];
    console.log(task);
 
-
    for (let i = 0; i < game.length - 1;) {
       const question = game[i][0];
       const correctAnswer = game[i][1];
@@ -20,8 +19,8 @@ const gameRules = (game) => {
       } else {
          console.log(`Your answer: '${userAnswer}' is wrong answer;(. Correct answer was ${correctAnswer})`);
          return `Let's try again, ${userName}!`;
-      }
-   }
+      };
+   };
    return `Congratulations, ${userName}!`;
 };
 export default gameRules;

@@ -11,7 +11,7 @@ const calculate = (num1, num2, operators) => {
          result = (num1 * num2)
          break;
       default:
-   }
+   };
    return result;
 };
 export default calculate;
