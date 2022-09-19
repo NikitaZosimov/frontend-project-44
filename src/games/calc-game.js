@@ -1,7 +1,22 @@
 import gameRules from '../index.js';
 import getRandomNumbers from '../getRandomNumbers.js';
-import calculate from '../calculate.js';
 
+const calculate = (num1, num2, operators) => {
+  let result;
+  switch (operators) {
+    case '+':
+      result = (num1 + num2);
+      break;
+    case '-':
+      result = (num1 - num2);
+      break;
+    case '*':
+      result = (num1 * num2);
+      break;
+    default:
+  }
+  return result;
+};
 const brainCalc = () => {
   const countRounds = [];
   while (countRounds.length < 3) {
