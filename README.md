@@ -12,10 +12,9 @@ $ make install
 $ sudo npm link
 ```
 <a href="https://asciinema.org/a/b5wrIZRJkO3m9nw7zpiCnelKI" target="_blank"><img src="https://asciinema.org/a/b5wrIZRJkO3m9nw7zpiCnelKI.svg" /></a>
----
-# **Games**
----
 
+
+# **Games**
 # **Brain-even**
 # Rules
 You will be shown a random number and need to answer "yes" if the number is even, or "no" if the number is odd
