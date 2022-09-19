@@ -19,10 +19,14 @@ $ sudo npm link
 ---
 
 # **1. Brain-even**
-# Rules
-You will be shown a random number and need to answer "yes" if the number is even, or "no" if the number is odd
+> Rules \n You will be shown a random number and need to answer "yes" if the number is even, or "no" if the number is odd. The game is played until three wins, if a mistake is made, the game ends and you can try again.
 
 <a href="https://asciinema.org/a/b5BpLarqV8EFkIdB1B1rFYPxJ" target="_blank"><img src="https://asciinema.org/a/b5BpLarqV8EFkIdB1B1rFYPxJ.svg" /></a>
+
+---
+
+# **2. Brain-calc**
+
 
 <a href="https://asciinema.org/a/00aOOmkaeHCTVesgw0K5UQTYv" target="_blank"><img src="https://asciinema.org/a/00aOOmkaeHCTVesgw0K5UQTYv.svg" /></a>
 
