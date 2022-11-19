@@ -35,6 +35,6 @@ const getQuestionAndAnswer = () => {
   const correctAnswer = String(progressionNum[indexOfHiddenNumber]);
   progressionNum[indexOfHiddenNumber] = '..';
   const question = progressionNum.join(' ');
-  return [`${question}`, `${correctAnswer}`];
+  return [question, correctAnswer];
 };
 export default gameRules(description, getQuestionAndAnswer);

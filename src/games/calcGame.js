@@ -47,6 +47,6 @@ const getQuestionAndAnswer = () => {
   const question = `${numFirst} ${randomOperators} ${numSecond}`;
   let correctAnswer = calculate(numFirst, numSecond, randomOperators);
   correctAnswer = String(correctAnswer);
-  return [`${question}`, `${correctAnswer}`];
+  return [question, correctAnswer];
 };
 export default gameRules(description, getQuestionAndAnswer);

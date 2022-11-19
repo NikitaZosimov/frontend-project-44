@@ -44,6 +44,6 @@ const getQuestionAndAnswer = () => {
   const question = `${numFirst} ${numSecond}`;
   let correctAnswer = getGcd(numFirst, numSecond);
   correctAnswer = String(correctAnswer);
-  return [`${question}`, `${correctAnswer}`];
+  return [question, correctAnswer];
 };
 export default gameRules(description, getQuestionAndAnswer);

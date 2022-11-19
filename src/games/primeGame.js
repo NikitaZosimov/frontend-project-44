@@ -30,6 +30,6 @@ const isPrimeNumber = (num) => {
 const getQuestionAndAnswer = () => {
   const question = getRandomNumbers(1, 10);
   const correctAnswer = isPrimeNumber(question) ? 'yes' : 'no';
-  return [`${question}`, `${correctAnswer}`];
+  return [question, correctAnswer];
 };
 export default gameRules(description, getQuestionAndAnswer);

@@ -29,6 +29,6 @@ const getQuestionAndAnswer = () => {
   const getsNumber = getRandomNumbers(1, 10);
   const question = `${getsNumber}`;
   const correctAnswer = (isEven(getsNumber) ? 'yes' : 'no');
-  return [`${question}`, `${correctAnswer}`];
+  return [question, correctAnswer];
 };
 export default gameRules(description, getQuestionAndAnswer);
