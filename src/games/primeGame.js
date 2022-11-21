@@ -12,24 +12,9 @@ const isPrimeNumber = (num) => {
   return true;
 };
 
-// const brainPrime = () => {
-//   const countRounds = [];
-//   while (countRounds.length < 3) {
-//     const getsNumber = getRandomNumbers(1, 50);
-//     const question = `${getsNumber}`;
-//     let correctAnswer;
-//     correctAnswer = isPrimeNumber(getsNumber) ? correctAnswer = 'yes' : correctAnswer = 'no';
-//     countRounds.push([question, correctAnswer]);
-//   }
-//   const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-//   const game = [countRounds, task].flat();
-//   return gameRules(game);
-// };
-// export default brainPrime;
-
 const getQuestionAndAnswer = () => {
   const question = getRandomNumbers(1, 10);
   const correctAnswer = isPrimeNumber(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
-export default gameRules(description, getQuestionAndAnswer);
+export default () => gameRules(description, getQuestionAndAnswer);
