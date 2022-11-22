@@ -19,6 +19,6 @@ const gameRules = (description, getQuestionAndAnswer) => {
       return `Let's try again, ${userName}!`;
     }
   }
-  return `Congratulations, ${userName}!`;
+  console.log(`Congratulations, ${userName}!`);
 };
 export default gameRules;
