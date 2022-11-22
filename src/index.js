@@ -17,8 +17,9 @@ const gameRules = (description, getQuestionAndAnswer) => {
     } else {
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
       console.log(`Let's try again, ${userName}!`);
+      return;
     }
   }
-  return `Congratulations, ${userName}!`;
+  console.log(`Congratulations, ${userName}!`);
 };
 export default gameRules;
