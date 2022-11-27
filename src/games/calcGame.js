@@ -1,5 +1,5 @@
 import gameRules from '../index.js';
-import getRandomNumbers from '../getRandomNumbers.js';
+import getRandomNumbers from '../helper.js';
 
 const description = 'What is the result of the expression?';
 
@@ -27,8 +27,7 @@ const getQuestionAndAnswer = () => {
   const getRandomOperators = Math.floor(Math.random() * operators.length);
   const randomOperators = operators[getRandomOperators];
   const question = `${numFirst} ${randomOperators} ${numSecond}`;
-  let correctAnswer = calculate(numFirst, numSecond, randomOperators);
-  correctAnswer = String(correctAnswer);
+  const correctAnswer = String(calculate(numFirst, numSecond, randomOperators));
   return [question, correctAnswer];
 };
 export default () => gameRules(description, getQuestionAndAnswer);
