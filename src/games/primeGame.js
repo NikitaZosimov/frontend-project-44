@@ -13,7 +13,7 @@ const isPrimeNumber = (num) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const question = getRandomNumbers(1, 10);
+  const question = getRandomNumbers(2, 50);
   const correctAnswer = isPrimeNumber(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
