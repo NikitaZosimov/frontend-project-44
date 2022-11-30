@@ -5,7 +5,7 @@ const description = 'Answer "yes" if given number is prime. Otherwise answer "no
 
 const isPrimeNumber = (num) => {
   for (let i = 2; i < num; i += 1) {
-    if (num % i === 0 && num < 2) {
+    if (num % i === 0 || num < 2) {
       return false;
     }
   }
@@ -14,7 +14,7 @@ const isPrimeNumber = (num) => {
 
 const getQuestionAndAnswer = () => {
   const question = getRandomNumbers(1, 10);
-  const correctAnswer = isPrimeNumber(question) ? 'no' : 'yes';
+  const correctAnswer = isPrimeNumber(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 export default () => gameRules(description, getQuestionAndAnswer);
